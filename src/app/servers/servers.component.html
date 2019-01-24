@@ -1,12 +1,18 @@
 
-<button type = "button" class = "btn btn-primary" [disabled] = "!newserver"> Primary</button>
+<button type = "button" 
+class = "btn btn-primary" 
+[disabled] = "!newserver" 
+(click)="onCreateServer()"> Primary</button>
+
+<p>{{servercreate}}</p>
 
 <!-- Property binding -->
-<p>{{newserver}}</p> 
+<!-- <p>{{newserver}}</p>  -->
 <!-- String interpolation -->
-<p [innerText]="newserver"></p> 
+<!-- <p [innerText]="newserver"></p>  -->
 
 <app-server></app-server>
 <app-server></app-server>
+
 <!-- <div class = "app-server"></div>
 <div class = "app-sever"></div> -->
