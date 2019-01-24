@@ -1,6 +1,11 @@
 
 <button type = "button" class = "btn btn-primary" [disabled] = "!newserver"> Primary</button>
 
+<!-- Property binding -->
+<p>{{newserver}}</p> 
+<!-- String interpolation -->
+<p [innerText]="newserver"></p> 
+
 <app-server></app-server>
 <app-server></app-server>
 <!-- <div class = "app-server"></div>
