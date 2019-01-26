@@ -22,7 +22,10 @@ class = "form-control"
 <!-- <p>{{newserver}}</p>  -->
 <!-- String interpolation -->
 <!-- <p [innerText]="newserver"></p>  -->
-<p *ngIf="serverCreated">Server was created, server name is {{servername}}</p>
+<p *ngIf="serverCreated; else noServer">Server was created, server name is {{servername}}</p>
+<ng-template #noServer>
+    <p>No server is created</p>
+</ng-template>
 
 <app-server></app-server>
 <app-server></app-server>
