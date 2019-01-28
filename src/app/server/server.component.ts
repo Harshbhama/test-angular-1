@@ -13,9 +13,24 @@ export class ServerComponent{
     serverstatus = 'offline'
     servertest = 'testmethod'
 
+    constructor(){
+        this.serverstatus = Math.random() > 0.5 ? 'Online' : 'Offline'
+    }
+
     getservertestthis()
     {
         return this.servertest;
+    }
+    getColor()
+    {
+        if(this.serverstatus == 'Online')
+        {
+            return 'green'
+        }
+        else
+        {
+            return 'red'
+        }
     }
     
 }
